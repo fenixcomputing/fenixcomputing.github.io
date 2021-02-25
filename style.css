@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+	background-color: #B80000;
+	margin: auto;
+	padding: auto;
+}
+
+#logo {
+	margin: auto;
+	padding: auto;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 5em;
+	font-weight: bold;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	margin-top: 150px;
+}
+
+img {
+	margin-left: 700px;
+	margin-top: 80px;
+}
