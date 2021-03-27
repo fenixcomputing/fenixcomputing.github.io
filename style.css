@@ -1,88 +1,318 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+@font-face {
+	font-family: "PhoenixScriptFLF";
+	src: url("medias/fonts/PhoenixScriptFLF.eot");
+	src: url("medias/fonts/PhoenixScriptFLF.eot?#iefix") format("embedded-opentype"),
+		 url("medias/fonts/PhoenixScriptFLF.woff2") format("woff2"),
+		 url("medias/fonts/PhoenixScriptFLF.woff") format("woff"),
+		 url("medias/fonts/PhoenixScriptFLF.ttf")  format("truetype"),
+		 url("medias/fonts/PhoenixScriptFLF.svg") format("svg");
+}
 
+@font-face {
+	font-family: "AdventPro";
+	src: url("medias/fonts/Advent Pro Regular.eot");
+	src: url("medias/fonts/Advent Pro Regular.eot?#iefix") format("embedded-opentype"),
+		 url("medias/fonts/Advent Pro Regular.woff2") format("woff2"),
+		 url("medias/fonts/Advent Pro Regular.woff") format("woff"),
+		 url("medias/fonts/Advent Pro Regular.ttf")  format("truetype"),
+		 url("medias/fonts/Advent Pro Regular.svg") format("svg");
+}
 
+@font-face {
+	font-family: "DancingScript";
+	src: url("medias/fonts/Dancing Script.eot");
+	src: url("medias/fonts/Dancing Script.eot?#iefix") format("embedded-opentype"),
+		 url("medias/fonts/Dancing Script.woff2") format("woff2"),
+		 url("medias/fonts/Dancing Script.woff") format("woff"),
+		 url("medias/fonts/Dancing Script.ttf")  format("truetype"),
+		 url("medias/fonts/Dancing Script.svg") format("svg");
+}
+
+/* INFORMATIONS DE BASE */
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Advent Pro', sans-serif;
-    padding: 0;
-    margin: 0;
-	background-color: #B80000;
-	margin: auto;
-	padding: auto;
+	background-color: black;
 }
 
-#logo {
-	margin: auto;
-	padding: auto;
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 h1 {
-	color: white;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 5em;
-	font-weight: bold;
-	margin-left: auto;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 h2 {
-	color: white;
 	text-align: center;
-	text-transform: uppercase;
-	margin-left: auto;
+	padding-top: 1px;
+	font-size: 2em;
+	font-weight: bold;
 }
 
-h3 {
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    opacity: none;
+}
+
+header li {
+    float: right;
+    font-size: 1.2em;
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    font-weight: bold;
+}
+
+/* LOGO - TITRE */
+#logo-title {
+	background-color: #B80000;
+	width: 100%;
+	height: 450px;
+}
+.logo {
+	float: left;
+	margin-left: 25px;
+	background-color: #B800000;	
+	margin-top: 70px;
+}
+
+.titre {
+	float: right;
+	margin-right: 75px;
+	background-color: #B800000;
+	margin-top: 125px;
+}
+
+.titre h1 {
+	font-family: 'PhoenixScriptFLF', Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif';
+	color: black;
+	text-shadow: 1px 2px 1px white;
+}
+
+.titre h2 {
+	font-family: 'DancingScript', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 3em;
+	text-shadow: 1px 2px 1px white;
+}
+
+/* SECTIONS */
+#about {
+	background-color: black;
+	width: 100%;
+	height: 400px;
+}
+
+#services {
+	background-color: #B80000;
+	width: 100%;
+	height: 700px;
+}
+
+#tarifs {
+	background-color: black;
+	width: 100%;
+	height: 550px;
+}
+
+#contact {
+	background-color: #B80000;
+	width: 100%;
+	height: 350px;
+}
+
+.textabout {
 	color: white;
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.2em;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.textabout h3 {
+	font-family: 'DancingScript', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-shadow: 1px 2px 1px white;
 	text-align: center;
-	margin-top: 150px;
-	margin-left: auto;
+	font-size: 3em;
+	color: #B80000;
 }
 
-img {
-	margin-left: auto;
-	margin-top: 80px;
+.textservices{
+	
 }
 
-@media all and (max-device-width: 480px)
-{
-    /* Vos règles CSS pour les mobiles ici */
+.textservices p {
+	color: white;
+	font-family: 'AventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.2em;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-@media all and (max-device-width: 800px)
-{
-    /* Vos règles CSS pour les mobiles ici */
+.textservices h3 {
+	font-family: 'DancingScript', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-shadow: 1px 2px 1px white;
+	text-align: center;
+	font-size: 3em;
 }
 
-@media all and (max-device-width: 850px)
-{
-    /* Vos règles CSS pour les mobiles ici */
+.texttarifs {
+	
 }
 
-@media all and (max-device-width: 980px)
-{
-    /* Vos règles CSS pour les mobiles ici */
+.texttarifs p {
+	color: white;
+	font-family: 'AventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.2em;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-@media screen and (max-width: 1280px)
-{
-	/* Vos règles CSS pour les mobiles ici */
+.texttarifs h3 {
+	font-family: 'DancingScript', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-shadow: 1px 2px 1px white;
+	text-align: center;
+	font-size: 3em;
+	color: #B80000;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
-{
-	/* Vos règles CSS pour les mobiles ici */	
+.textcontact {
+	
 }
 
-@media tv
-{
-	/* Vos règles CSS pour les mobiles ici */	
+.textcontact h3 {
+	font-family: 'DancingScript', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-shadow: 1px 2px 1px white;
+	text-align: center;
+	font-size: 3em;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-@media all and (orientation: portrait)
-{
-	/* Vos règles CSS pour les mobiles ici */	
+.textcontact p {
+	color: white;
+	font-family: 'AventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.2em;
+	margin-left: 20px;
+	margin-right: 20px;
 }
+
+/* TABLEAU SERVICES */
+table, td {
+    border: 1px solid white;
+    margin: 10px auto 10px;
+}
+
+.serv {
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-weight: bold;
+    color: black;
+    font-size: 1.4em;
+}
+
+/* TABLEAU TARIFS */
+table, td {
+	font-family: 'DancingScript', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    border: 1px hidden white;
+    margin: 10px auto 10px;
+}
+
+.serv1 {
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-weight: bold;
+    color: white;
+    font-size: 1.3em;
+}
+
+.desc{
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-style: italic;
+    color: white;
+    font-size: 1.3em;
+}
+
+.prix {
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    color: #B80000;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody {
+    font-weight: bold;
+}
+
+thead {
+    background-color: #b80000;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* FOOTER */
+footer {
+	font-family: 'AdventPro', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: bold;
+	font-size: 1.2em;
+    background-color: black;
+    color: white;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+#copyrighticons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+
+#copyright {
+    color: white;
+    text-align: left;
+    width: 50%;
+}
+
+#icons {
+    color: white;
+    width: 50%;
+    text-align: right;
+}
+
+#icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.5em;
+    color: white;
+}
+
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
+
+/* PETITES RESOLUTIONS */
